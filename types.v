@@ -9,7 +9,7 @@ pub:
 	code      int    [json: 'code']      // Service response code.
 	message   string [json: 'message']   // Message prompt of the operation result.
 	request_id string [json: 'requestId'] // A unique number for the request, which can be used for troubleshooting.
-	success   bool   [json: 'bool']      // Indicates whether the business operation is successful.
+	success   bool   [json: 'success']      // Indicates whether the business operation is successful.
 	timestamp i64    [json: 'ts']        // Server millisecond timestamp.
 	data      json.Any [json: 'data']    // Business data field. This field can be of any data type. For specific data types, please refer to the corresponding interface.
 }
